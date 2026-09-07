@@ -1,0 +1,8 @@
+# LumeMDL v1
+name: rock
+primitive: sphere
+radius: 0.55
+segments: 12
+rings: 8
+scale: [1.1, 0.6, 1.0]
+color: [0.45, 0.42, 0.40]

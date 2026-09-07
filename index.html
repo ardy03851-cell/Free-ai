@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<title>Lume · Custom 3D World</title>
+<style>
+    html, body {
+        margin: 0; padding: 0;
+        width: 100%; height: 100%;
+        background: #0a0e18;
+        overflow: hidden;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    #gameCanvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background: #87b6e8;
+        touch-action: none;
+    }
+    #loading {
+        position: fixed;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 22px;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        text-align: center;
+        pointer-events: none;
+    }
+    .bar {
+        width: 220px; height: 6px;
+        background: rgba(255,255,255,0.15);
+        border-radius: 3px;
+        margin: 14px auto 0;
+        overflow: hidden;
+    }
+    .bar > div {
+        height: 100%; width: 0%;
+        background: linear-gradient(90deg, #6ce5ff, #b18cff);
+        transition: width 0.2s;
+    }
+</style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="loading">
+    Lume 3D Engine
+    <div class="bar"><div id="bar"></div></div>
+    <div style="font-size:12px;opacity:0.7;margin-top:8px">Building procedural world…</div>
+</div>
+
+<script type="module" src="./game/main.js"></script>
+</body>
+</html>
