@@ -1,0 +1,18 @@
+# LumeMDL v1
+# Authored in plain text — loadable with engine/models/MDLFormat.js
+name: tree_pine
+primitive: cone
+radius: 0.9
+height: 3.5
+segments: 10
+translate: [0, 2.5, 0]
+color: [0.20, 0.55, 0.20]
+
+# child trunk
+primitive: cylinder
+radiusTop: 0.18
+radiusBottom: 0.18
+height: 1.2
+segments: 8
+translate: [0, 0.6, 0]
+color: [0.40, 0.25, 0.10]
